@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Selected Products</title>
+    <script src="/js/main.js"></script>
+
+</head>
+<body>
+    <!-- ---------NAVIGATION BAR-------- -->
+    <div class="topnav">
+        <!-- ... Navigation bar content ... -->
+    </div>
+    <!-- ---------NAVIGATION BAR-------- -->
+
+    <!-- Selected products section -->
+    <section>
+        <div class="selected-products">
+            <h1>Your Selected Products</h1>
+            <ul id="selected-products-list"></ul>
+        </div>
+
+        <script>
+            // Replace this sample data with your actual data
+            var selectedProducts = [
+                { name: "Bishop Sleeved Printed Crop Top", price: 390 },
+                { name: "Puff Sleeved Solid Wrap Dress", price: 549 },
+                { name: "Bishop-Sleeved Printed Wrap Dress", price: 527 },
+                { name: "Pink Floral Printed Maxi Dress", price: 670 },
+                { name: "Black Mandarin Neck A-Line Top", price: 800 },
+                { name: "Foil Print Flared Kurta", price: 999 },
+                { name: "Gota Work Gold Printed Flared Kurta", price: 819 },
+                { name: "Red Printed Kurta Pant Set", price: 799 },
+                { name: "Copper Slip On Mule Sandal", price: 699 },
+                { name: "Blue Synthetic Slip On Sandals", price: 969 },
+                { name: "Multi Colored Slip On Pump", price: 1400 },
+                { name: "Multi Colored Slip On Pump", price: 1499 },
+                { name: "Black Linen Formal Shirt", price: 1159 },
+                { name: "Mandarin Neck Solid Regular T-Shirt", price: 429 },
+                { name: "Orange Printed Polo T-Shirt", price: 469 },
+                { name: "Men Printed Polo T-Shirt", price: 439 },
+                { name: "Navy Blue Checkered Casual Shirt", price: 599 },
+                { name: "Green Printed Kurta Pyjama Set", price: 1049 },
+                { name: "Black Solid Nehru Jacket", price: 1174 },
+                { name: "Blue Solid Short Kurta", price: 900 },
+                { name: "White Pu Lace Up Sneakers", price: 1019 },
+                { name: "Color Blocked Lace Up Sneaker", price: 789 },
+                { name: "White Lace Up Sport Shoes", price: 749 },
+                { name: "Lace Up Sport Shoe", price: 1209 }
+                // Add more products as needed
+            ];
+
+            var selectedProductsList = document.getElementById("selected-products-list");
+
+            selectedProducts.forEach(function(product) {
+                var listItem = document.createElement("li");
+                listItem.textContent = product.name + " - $" + product.price.toFixed(2);
+                selectedProductsList.appendChild(listItem);
+            });
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+# node module
+source code/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+/dist
+/build
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.idea/
+.vscode/
+
+# npm package-lock file (optional, only if you want to ignore it)
+package-lock.json
+yarn.lock
+
+# OS generated files
+.vscode/
+.vscode-test/
+
+# Coverage folder
+coverage/
+
+# Temporary files from editors (e.g., vim, emacs)
+*.swp
+*.swo
+*.swn
+
+# Tye generated files
+.tye/
+
+# Yarn Integrity file
+.yarn-integrity
